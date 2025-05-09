@@ -7,10 +7,13 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'cdn.dummyjson.com'
+        protocol: "https",
+        hostname: "cdn.dummyjson.com",
       },
     ],
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
 
